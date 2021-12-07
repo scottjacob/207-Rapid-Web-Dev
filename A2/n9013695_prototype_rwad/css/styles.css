@@ -1,0 +1,131 @@
+/* Single stylesheet */
+/* Global styling */
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif, Verdana, Geneva, Tahoma, sans-serif; /* Sets the font styles for the page. These are web safe fonts. */
+    background-color: rgb(255, 255, 255);
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+main {
+    padding: 0;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    margin-top: 10px;
+    background-color: #343A40;
+}
+
+/* item_details + two styling */
+
+#relatedProducts {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#relatedProductsHeading {
+    margin-left: 45px;
+}
+
+.checkoutBtn {
+    width: 110px;
+    padding: 5.5px;
+}
+
+#commentsHeading {
+    margin-top: 50px;
+}
+
+#nav-tabContent {
+    padding: 10px;
+}
+
+.media {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.nestedMedia {
+    padding-top: 10px;
+}
+
+#carouselExampleCaptions {
+    margin: 0px;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#commentsDetailsPage {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.user_name{
+    font-size:14px;
+    font-weight: bold;
+}
+.comments-list .media{
+    border-bottom: 1px dotted #ccc;
+}
+
+#carouselMain {
+    padding: 0px;
+    margin: 0px;
+}
+.card {
+    border: none;
+    box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
+}
+
+#cardsIndex {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    background-color: white;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+}
+
+#jumbotronIndexCenter {
+    background: rgb(194, 194, 194);
+    background: rgba(194, 194, 194, 0.5);
+}
+
+#pageNav {
+    margin-top: 20px;
+}
+
+#orderSummary {
+    background-color: white;
+    padding-top: 30px;
+}
+
+#createSaleHeading {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

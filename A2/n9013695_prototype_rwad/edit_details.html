@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This is how you leave a comment in the HTML section of the document. -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="My Book Store">
+    <title>My Book Store</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <a class="navbar-brand text-light" href="/"><img src="img/navbar//logo.png" width="30" height="30"
+                    class="d-inline-block align-top" alt="logo">My Book Store</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="item_display.html">Featured</a>
+                            <a class="dropdown-item" href="item_display.html">Best Selling</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item">Categories</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item">Fiction</a>
+                            <a class="dropdown-item">Non-Fiction</a>
+                            <a class="dropdown-item" href="item_display.html">Fanstasy</a>
+                            <a class="dropdown-item">Historical</a>
+                            <a class="dropdown-item">Romance</a>
+                            <a class="dropdown-item">Sci-Fi</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            My Account
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Manage Account</a>
+                            <a class="dropdown-item" href="item_create.html">Sell an item</a>
+                            <a class="dropdown-item" href="edit_display.html">Edit an item</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="index.html">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="mx-2 my-auto d-inline w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border border-right-0" placeholder="Search...">
+                        <span class="input-group-append">
+                            <button class="btn btn-primary" type="button">Search</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+        <!--jumbotron-->
+        <div class="jumbotron jumbotron-fluid text-dark card card-image"
+            style="background-image: url(img/navbar/cover.jpg); background-size: cover; background-repeat: no-repeat;">
+            <div class="container">
+                <h1 class="display-4">My Book Store</h1>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container-fluid">
+
+        <section>
+            <div class="container bg-white rounded">
+
+                <div class="row-sm">
+                    <h1 class="my-2" id="createSaleHeading">Edit Your Product</h1>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="http://placehold.it/350x400" alt="">
+                    </div>
+
+                    <div class="col-md-8">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Title</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Author</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">Year Published</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Select...</option>
+                                        <option>2020</option>
+                                        <option>2019</option>
+                                        <option>2018</option>
+                                        <option>2017</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">Condition</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>New</option>
+                                        <option>Used</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">Category</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>Fiction</option>
+                                        <option>Non-Fiction</option>
+                                        <option>Historical</option>
+                                        <option>Sci-Fi</option>
+                                        <option>Romance</option>
+                                        <option>Educational</option>
+                                        <option>Horror</option>
+                                        <option>Thriller</option>
+                                        <option>True Crime</option>
+                                        <option>Biography</option>
+                                        <option>Fantasy</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-10">
+                                    <label for="inputDescription">Description</label>
+                                    <textarea class="form-control" id="descriptionArea" rows="5"></textarea>
+                                </div>
+
+                                <div class="form-group col-md-2">
+                                    <label for="inputZip">Qty</label>
+                                    <input type="number" min="0" class="form-control" id="inputZip">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customFile">
+                                        <label class="custom-file-label" for="customFile">Choose images...</label>
+                                    </div>
+                                </div>
+                                <div class="form-group input-group col-md-5">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">$</span>
+                                    </div>
+                                    <input type="number" min="0" step="any" class="form-control" placeholder="Enter amount:" id="inputPrice" aria-label="Amount">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <button type="submit" class="btn btn-primary">Update</button>
+                                    <button type="submit" class="btn btn-danger">Remove</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+
+    <!-- Footer of the website -->
+    <footer class="footer">
+        <div class="text-center py-2">
+            <span class="text-light">Copyright &copy; 2020</span>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This is how you leave a comment in the HTML section of the document. -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="My Book Store">
+    <title>My Book Store</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <a class="navbar-brand text-light" href="/"><img src="img/navbar//logo.png" width="30" height="30"
+                    class="d-inline-block align-top" alt="logo">My Book Store</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="item_display.html">Featured</a>
+                            <a class="dropdown-item" href="item_display.html">Best Selling</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item">Categories</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item">Fiction</a>
+                            <a class="dropdown-item">Non-Fiction</a>
+                            <a class="dropdown-item" href="item_display.html">Fanstasy</a>
+                            <a class="dropdown-item">Historical</a>
+                            <a class="dropdown-item">Romance</a>
+                            <a class="dropdown-item">Sci-Fi</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            My Account
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Manage Account</a>
+                            <a class="dropdown-item" href="item_create.html">Sell an item</a>
+                            <a class="dropdown-item" href="edit_display.html">Edit an item</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="index.html">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="mx-2 my-auto d-inline w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border border-right-0" placeholder="Search...">
+                        <span class="input-group-append">
+                            <button class="btn btn-primary" type="button">Search</button>
+                        </span>
+                    </div>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="btn btn-primary checkoutBtn text-white" href="checkout.html"><img src="img/navbar/cart.png" width="20"
+                                height="20" class="d-inline-block align-top" alt="cart logo">My Cart  <span class="badge badge-light">4</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--jumbotron-->
+        <div class="jumbotron jumbotron-fluid text-dark card card-image"
+            style="background-image: url(img/navbar/cover.jpg); background-size: cover; background-repeat: no-repeat;">
+            <div class="container">
+                <h1 class="display-4">My Book Store</h1>
+            </div>
+        </div>
+
+    </header>
+    <main class="container-fluid">
+        <!-- Cards -->
+        <section>
+            <div class="container text-left rounded text-dark">
+                <span>
+                    <h2 class="display-3">My Products</h2>
+                    <p class="text-muted">Edit products for sale</p>
+                </span>
+            </div>
+        </section>
+
+        <!-- Begin card section -->
+        <section class="container rounded" id="cardsIndex">
+            <div class="card-columns h-100">
+                <div class="col mb-4 text-center">
+                    <div class="card h-100">
+                        <img src="img/products/bookOne.jpeg" width="200" height="450" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Harry Potter and the Philosopher's Stone</h5>
+                            <p class="card-text">A young boy embarks on a journey to become a wizard.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="edit_details.html" class="btn btn-outline-primary">Edit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 text-center">
+                    <div class="card h-100">
+                        <img src="img/products/bookTwo.jpeg" width="200" height="450" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Harry Potter and the Chamber of Secrets</h5>
+                            <p class="card-text">See what the boy wizard is up to in this latest adventure.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="edit_details.html" class="btn btn-outline-primary">Edit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4 text-center">
+                    <div class="card h-100">
+                        <img src="img/products/bookThree.jpeg" width="200" height="450" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Harry Potter and the Prisoner of Azkaban</h5>
+                            <p class="card-text">The third installment of the series.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="edit_details.html" class="btn btn-outline-primary">Edit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination section -->
+            <nav aria-label="Page navigation example" id="pageNav">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </section> <!-- End card deck -->
+    </main>
+
+        <!-- Footer of the website -->
+    <footer class="footer">
+        <div class="text-center py-2">
+            <span class="text-light">Copyright &copy; 2020</span>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

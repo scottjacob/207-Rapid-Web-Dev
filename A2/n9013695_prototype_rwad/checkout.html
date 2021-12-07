@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This is how you leave a comment in the HTML section of the document. -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <meta name="description" content="My Book Store">
+  <title>My Book Store</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand text-light" href="/"><img src="img/navbar/logo.png" width="30" height="30"
+          class="d-inline-block align-top" alt="logo">My Book Store</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="item_display.html">Featured</a>
+              <a class="dropdown-item" href="item_display.html">Best Selling</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item">Categories</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item">Fiction</a>
+              <a class="dropdown-item">Non-Fiction</a>
+              <a class="dropdown-item" href="item_display.html">Fanstasy</a>
+              <a class="dropdown-item">Historical</a>
+              <a class="dropdown-item">Romance</a>
+              <a class="dropdown-item">Sci-Fi</a>
+          </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My Account
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Manage Account</a>
+                <a class="dropdown-item" href="item_create.html">Sell an item</a>
+                <a class="dropdown-item" href="edit_display.html">Edit an item</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="index.html">Logout</a>
+            </div>
+        </li>
+        </ul>
+        <form class="mx-2 my-auto d-inline w-100">
+          <div class="input-group">
+            <input type="text" class="form-control border border-right-0" placeholder="Search...">
+            <span class="input-group-append">
+              <button class="btn btn-primary" type="button">Search</button>
+            </span>
+          </div>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="btn btn-primary checkoutBtn text-white" href="checkout.html"><img src="img/navbar/cart.png" width="20"
+                      height="20" class="d-inline-block align-top" alt="cart logo">My Cart  <span class="badge badge-light">4</span></a>
+          </li>
+      </ul>
+      </div>
+    </nav>
+
+    <!--jumbotron-->
+    <div class="jumbotron jumbotron-fluid text-dark card card-image"
+      style="background-image: url(img/navbar/cover.jpg); background-size: cover; background-repeat: no-repeat;">
+      <div class="container">
+        <h1 class="display-4">Shopping Cart</h1>
+        <p class="lead">Thank you for shopping with us, please complete your purchase.</p>
+      </div>
+    </div>
+
+  </header>
+  <main class="container-fluid">
+    <section>
+      <div class="pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+
+              <!-- Shopping cart table -->
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="border-0 bg-light">
+                        <div class="p-2 px-3 text-uppercase">Product</div>
+                      </th>
+                      <th scope="col" class="border-0 bg-light">
+                        <div class="py-2 text-uppercase">Price</div>
+                      </th>
+                      <th scope="col" class="border-0 bg-light">
+                        <div class="py-2 text-uppercase">Quantity</div>
+                      </th>
+                      <th scope="col" class="border-0 bg-light">
+                        <div class="py-2 text-uppercase">Remove</div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="border-0">
+                        <div class="p-2">
+                          <img src="img/products/bookOne.jpeg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                          <div class="ml-3 d-inline-block align-middle">
+                            <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block align-middle">Harry Potter and
+                                the Philospher's Stone</a></h5><span
+                              class="text-muted font-weight-normal font-italic d-block">Category: Fantasy,
+                              Fiction</span>
+                          </div>
+                        </div>
+                      </th>
+                      <td class="border-0 align-middle"><strong>$15.99</strong></td>
+                      <td class="border-0 align-middle"><strong>1</strong></td>
+                      <td class="border-0 align-middle"><a href="#"><img src="/img/navbar/remove.png" width="30"
+                            height="30"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="p-2">
+                          <img src="img/products/bookFour.jpeg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                          <div class="ml-3 d-inline-block align-middle">
+                            <h5 class="mb-0"><a href="#" class="text-dark d-inline-block">Harry Potter and the Goblet of
+                                Fire</a></h5><span class="text-muted font-weight-normal font-italic">Category:
+                              Fantasy, Fiction</span>
+                          </div>
+                        </div>
+                      </th>
+                      <td class="align-middle"><strong>$15.99</strong></td>
+                      <td class="align-middle"><strong>3</strong></td>
+                      <td class="align-middle"><a href="#" class="text-dark"><img src="/img/navbar/remove.png"
+                            width="30" height="30"></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="p-2">
+                          <img src="img/products/bookSeven.jpeg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                          <div class="ml-3 d-inline-block align-middle">
+                            <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">Harry Potter and the Deathly
+                                Hallows</a></h5><span class="text-muted font-weight-normal font-italic">Category:
+                              Fantasy, Fiction</span>
+                          </div>
+                        </div>
+                      <td class="align-middle"><strong>$15.99</strong></td>
+                      <td class="align-middle"><strong>1</strong></td>
+                      <td class="align-middle"><a href="#" class="text-dark"><img src="/img/navbar/remove.png"
+                            width="30" height="30"></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- End -->
+            </div>
+          </div>
+
+
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputFirstName1">First Name:</label>
+                <input type="firstName" class="form-control" id="inputFirstName1" placeholder="First Name">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputLastName1">Last Name:</label>
+                <input type="lastName" class="form-control" id="inputLastName1" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                  <option>QLD</option>
+                  <option>NSW</option>
+                  <option>WA</option>
+                  <option>VIC</option>
+                  <option>ACT</option>
+                  <option>NT</option>
+                  <option>TAS</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Postcode</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+          </form>
+
+
+          <div class="container rounded" id="orderSummary">
+            <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Order summary </div>
+            <div class="p-4">
+              <p class="font-italic mb-4">Shipping and additional costs are calculated based on values you have entered.
+              </p>
+              <ul class="list-unstyled mb-4">
+                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal
+                  </strong><strong>$79.95</strong></li>
+                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Shipping and
+                    handling</strong><strong>$10.00</strong></li>
+                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">GST
+                    (inc)</strong><strong>$7.95</strong></li>
+                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
+                  <h5 class="font-weight-bold">$89.95</h5>
+                </li>
+              </ul><a href="#" class="btn btn-dark rounded-pill py-2 btn-block" data-toggle="modal" data-target="#orderModal">Procceed to checkout</a>
+            </div>
+          </div>
+
+    </section>
+
+     <!-- The Modal -->
+     <div class="modal fade" id="orderModal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+              <h4 class="modal-title">Order Successful!</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+              <p>Order ID: xxxxxxxxxxxxx</p>
+              <p>A receipt has been sent to your account email</p>
+              <p>Thank you for shopping with us!</p>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+              <button type="button" class="btn btn-outline-success" data-dismiss="modal">Submit</button>
+          </div>
+
+          </div>
+      </div>
+
+  </main>
+
+  <!-- Footer of the website -->
+  <footer class="footer">
+    <div class="text-center py-2">
+      <span class="text-light">Copyright &copy; 2020</span>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
